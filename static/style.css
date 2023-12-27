@@ -1,0 +1,84 @@
+* {
+    color: white;
+    font-size: 30px;
+    overflow: hidden;
+    font-family: 'Fredoka One';
+}
+
+body {
+    background-color: #e74c3c;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Organo';
+    src: url('/static/Organo.ttf');
+}
+
+.next {
+    bottom: 10px;
+    left: 50%;
+    position: absolute;
+}
+
+.next p,
+a {
+    font-size: 15px;
+}
+
+#page2h1 {
+    font-size: 200px;
+    text-align: center;
+}
+
+#page4h1 {
+    font-size: 150px;
+    text-align: center;
+}
+
+#page4h2,
+#PutDownPhoneh1,
+#ReadyForActivityh1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+#page5h1 {
+    font-size: 170px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+#countdown {
+    position: absolute;
+    bottom: 20px;
+    left: 50%
+}
+
+button {
+    width: 15vw;
+    padding: 1vw 0;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1vw;
+    border: 2px solid white;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+
+button:active {
+    background: rgb(255, 255, 255);
+    transition: 0.1s;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 15%;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Not ready</title>
+</head>
+
+<body>
+    <script>
+        var eventSource = new EventSource("/listenphoneup")
+    
+        eventSource.addEventListener("phoneoff", function(e) {
+            location.replace("http://localhost:5001/putdownphone");
+        })
+    </script>
+
+    <h1 id="PutDownPhoneh1">
+        Pick up your phone from inside the cabinet
+    </h1>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Activity countdown</title>
+</head>
+
+<body>
+    <h1 id="page4h1">
+        YOUR TASK:
+    </h1>
+
+
+    <h2 id="page4h2">
+        {{ activity }}
+    </h2>
+    <p id="countdown"></p>
+    <script>
+        const startingMinutes = 10;
+        let time = startingMinutes * 60;
+
+        const countdownEl = document.getElementById('countdown');
+
+        setInterval(updateCountdown, 1000);
+
+        function updateCountdown() {
+            if (time == 0) {
+                location.replace("http://localhost:5001/activitycomplete");
+            }
+            const minutes = Math.floor(time / 60);
+            let seconds = time % 60;
+
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+
+            countdownEl.innerHTML = `${minutes}: ${seconds}`;
+            time--;
+        };
+    </script>
+    <div class="next">
+        <a href="/pullanimation">Page 4</a>
+        <a href="/putdownphone">Page 1</a>
+    </div>
+
+</body>
+
+</html>

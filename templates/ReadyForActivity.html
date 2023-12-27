@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Ready for activity</title>
+</head>
+
+<body>
+    <!-- <script>
+        function yes(){
+            $.get('/servoclose');
+            location.replace("http://localhost:5001/pullthelever");
+        };
+        
+        function no() {
+            location.replace("http://localhost:5001/notready");
+        };
+    </script> -->
+
+    <h1 id="ReadyForActivityh1">Are you ready for an activity?</h1>
+
+    <div class="buttons">
+        <a href="http://localhost:5001/pullthelever" id="yes"><button type="button">YES!</button></a>
+        <a href="http://localhost:5001/notready" id="no"><button type="button">NO!</button></a>
+    </div>
+    <!-- <div class="buttons">
+        <button type="button" id="yes" onclick="yes();">YES!</button>
+        <button type="button" id="no" onclick="no();">NO!</button>
+    </div> -->
+
+
+    <div class="next">
+        <a href="/putdownphone">Page 1</a>
+        <a href="/pullthelever">Page 3</a>
+    </div>
+
+</body>
+
+</html>

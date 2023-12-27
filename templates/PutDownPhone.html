@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Pull down phone</title>
+</head>
+
+<body>
+    <script>
+        var eventSource = new EventSource("/listenphonedown")
+
+        eventSource.addEventListener("phoneon", function(e) {
+            location.replace("http://localhost:5001/readyforactivity");
+        })
+    </script>
+
+    <h1 id="PutDownPhoneh1">
+        Put your phone inside the cabinet
+    </h1>
+
+
+    <div class="next">
+        <a href="/activitycountdown">Page 5</a>
+        <a href="/readyforactivity">Page 2</a>
+    </div>
+
+</body>
+
+</html>

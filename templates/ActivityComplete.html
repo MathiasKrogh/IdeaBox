@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Activity complete</title>
+</head>
+
+<body>
+    <!-- <script>
+        function openCage() {
+            $.get('/servoopen');
+            location.replace("http://localhost:5001/notready");
+        };
+
+        function continueTasks() {
+            location.replace("http://localhost:5001/pullthelever");
+        };
+    </script> -->
+
+    <h1 id="ReadyForActivityh1">Good job completing the task!</h1>
+
+    <!-- <div class="buttons">
+        <button type="button" id="open" onclick="openCage();">Open the cage!</button>
+        <button type="button" id="continue" onclick="continueTask();">More task!</button>
+    </div> -->
+    
+    <div class="buttons">
+        <a href="http://localhost:5001/notready" id="yes"><button type="button">Open the cage!</button></a>
+        <a href="http://localhost:5001/pullthelever" id="no"><button type="button">More tasks!</button></a>
+    </div>
+
+    <div class="next">
+        <a href="/putdownphone">Page 5</a>
+        <a href="/putdownphone">Page 1</a>
+    </div>
+
+</body>
+
+</html>
